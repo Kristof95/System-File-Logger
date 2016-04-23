@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.exe">
+   <Modules>
+    <Module Name="system file logger.exe">
+     <Namespaces>
+      <Namespace Name="SysFileLogger">
+       <Types>
+        <Type Name="FileFilterManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FileFilter(System.Windows.Forms.ComboBox,System.IO.FileSystemWatcher)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="179">The 'this' parameter (or 'Me' in Visual Basic) of 'FileFilterManager.FileFilter(ComboBox, FileSystemWatcher)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="187">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'FileFilterManager.FileFilter(ComboBox, FileSystemWatcher)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="180">In externally visible method 'FileFilterManager.FileFilter(ComboBox, FileSystemWatcher)', validate parameter 'filter' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="182">In externally visible method 'FileFilterManager.FileFilter(ComboBox, FileSystemWatcher)', validate parameter 'fileSysWatch' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillComboBoxWithFileExt(System.Windows.Forms.ComboBox)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Extenstions" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="173">In method 'FileFilterManager.FillComboBoxWithFileExt(ComboBox)', correct the spelling of 'Extenstions' in parameter name 'fileExtenstionsComboB' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="173">The 'this' parameter (or 'Me' in Visual Basic) of 'FileFilterManager.FillComboBoxWithFileExt(ComboBox)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="174">In externally visible method 'FileFilterManager.FillComboBoxWithFileExt(ComboBox)', validate parameter 'fileExtenstionsComboB' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFileAttributes(System.Windows.Forms.DataGridView)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="217">Method 'FileFilterManager.GetFileAttributes(DataGridView)' passes a literal string as parameter 'caption' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Warning".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="222">Method 'FileFilterManager.GetFileAttributes(DataGridView)' passes a literal string as parameter 'caption' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Warning".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="217">Method 'FileFilterManager.GetFileAttributes(DataGridView)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Please choose from the file path column!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="222">Method 'FileFilterManager.GetFileAttributes(DataGridView)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Sorry, permission denied!".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="219">Modify 'FileFilterManager.GetFileAttributes(DataGridView)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="217">Change 'FileFilterManager.GetFileAttributes(DataGridView)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="222">Change 'FileFilterManager.GetFileAttributes(DataGridView)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="196">In externally visible method 'FileFilterManager.GetFileAttributes(DataGridView)', validate parameter 'items' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsPathSelected(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="164">The 'this' parameter (or 'Me' in Visual Basic) of 'FileFilterManager.IsPathSelected(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowInExplorer(System.Windows.Forms.DataGridView)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="227">The 'this' parameter (or 'Me' in Visual Basic) of 'FileFilterManager.ShowInExplorer(DataGridView)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="228">In externally visible method 'FileFilterManager.ShowInExplorer(DataGridView)', validate parameter 'filePaths' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateCreatedFilesDict(System.Windows.Forms.DataGridView,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dict" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="138">Correct the spelling of 'Dict' in member name 'FileFilterManager.UpdateCreatedFilesDict(DataGridView, string, string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Infos" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="138">In method 'FileFilterManager.UpdateCreatedFilesDict(DataGridView, string, string)', correct the spelling of 'Infos' in parameter name 'createdFileInfosDisplay' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="140">Replace the call to 'string.Equals(string)' in 'FileFilterManager.UpdateCreatedFilesDict(DataGridView, string, string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="145">In externally visible method 'FileFilterManager.UpdateCreatedFilesDict(DataGridView, string, string)', validate parameter 'createdFileInfosDisplay' before using it.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="140">In externally visible method 'FileFilterManager.UpdateCreatedFilesDict(DataGridView, string, string)', validate parameter 'extension' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateDeletedFilesDict(System.Windows.Forms.DataGridView,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dict" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="150">Correct the spelling of 'Dict' in member name 'FileFilterManager.UpdateDeletedFilesDict(DataGridView, string, string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Infos" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="150">In method 'FileFilterManager.UpdateDeletedFilesDict(DataGridView, string, string)', correct the spelling of 'Infos' in parameter name 'deletedFileInfosDisplay' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="153">Replace the call to 'string.Equals(string)' in 'FileFilterManager.UpdateDeletedFilesDict(DataGridView, string, string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="159">In externally visible method 'FileFilterManager.UpdateDeletedFilesDict(DataGridView, string, string)', validate parameter 'deletedFileInfosDisplay' before using it.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="153">In externally visible method 'FileFilterManager.UpdateDeletedFilesDict(DataGridView, string, string)', validate parameter 'extension' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateFilesList(System.Windows.Forms.DataGridView,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="119">In externally visible method 'FileFilterManager.UpdateFilesList(DataGridView, string, string)', validate parameter 'displayAllEvents' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateRenamedFilesDict(System.Windows.Forms.DataGridView,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dict" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="125">Correct the spelling of 'Dict' in member name 'FileFilterManager.UpdateRenamedFilesDict(DataGridView, string, string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Infos" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="125">In method 'FileFilterManager.UpdateRenamedFilesDict(DataGridView, string, string)', correct the spelling of 'Infos' in parameter name 'renamedFileInfosDisplay' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="132">In externally visible method 'FileFilterManager.UpdateRenamedFilesDict(DataGridView, string, string)', validate parameter 'renamedFileInfosDisplay' before using it.</Issue>
+            </Message>
+            <Message Id="newFileName" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="FileFilterManager.cs" Line="125">'newFileName', a variable declared in 'FileFilterManager.UpdateRenamedFilesDict(DataGridView, string, string)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileFilterManager+FileExtensions" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'FileFilterManager.FileExtensions' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dat" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dat" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dat' in member name 'FileFilterManager.FileExtensions.Dat' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Mp3" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Mp" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'Mp' in member name 'FileFilterManager.FileExtensions.Mp3' by changing it to 'MP'.</Issue>
+            </Message>
+            <Message Id="Mp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Mp' in member name 'FileFilterManager.FileExtensions.Mp3' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Php" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Php" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Php' in member name 'FileFilterManager.FileExtensions.Php' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Ppt" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ppt" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ppt' in member name 'FileFilterManager.FileExtensions.Ppt' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Rar" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Rar" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Rar' in member name 'FileFilterManager.FileExtensions.Rar' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tif" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Tif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tif' in member name 'FileFilterManager.FileExtensions.Tif' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MainDialog" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FileAttrView_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.cs" Line="133">Method 'MainDialog.FileAttrView_CellDoubleClick(object, DataGridViewCellEventArgs)' passes a literal string as parameter 'caption' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Warning!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.cs" Line="133">Method 'MainDialog.FileAttrView_CellDoubleClick(object, DataGridViewCellEventArgs)' passes a literal string as parameter 'text' of a call to 'MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon)'. Retrieve the following string(s) from a resource table instead: "Please choose from file path column!".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.cs" Line="130">Modify 'MainDialog.FileAttrView_CellDoubleClick(object, DataGridViewCellEventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.cs" Line="133">Change 'MainDialog.FileAttrView_CellDoubleClick(object, DataGridViewCellEventArgs)' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FileAttrView_SelectionChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Double.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.cs" Line="105">Because the behavior of 'double.ToString()' could vary based on the current user's locale settings, replace this call in 'MainDialog.FileAttrView_SelectionChanged(object, EventArgs)' with a call to 'double.ToString(IFormatProvider)'. If the result of 'double.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeComponent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="119">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Auto-detect partition(s)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="151">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Browse".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="204">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Changed".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="422">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Created file(s)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="471">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Deleted file(s)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="562">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "File extensions".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="254">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "File size(MB)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="580">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "File system monitor".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="353">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "File/Folder informations".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="553">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Filter".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="521">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "History".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="105">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Include subdirectories".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="234">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Last access time".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="244">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Last write time".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="213">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "More file informations".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="134">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Options".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="224">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Read Only".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="364">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'Control.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Renamed file(s)".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.DataGridViewColumn.set_HeaderText(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="342">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Date".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="408">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Date".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="458">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Date".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="507">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Date".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="452">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Extension".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="501">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Extension".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="321">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "File(s) path".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="389">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "File(s) path".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="446">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "File(s) path".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="495">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "File(s) path".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="395">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "From".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="328">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Old path of the file".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="402">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "To".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="335">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'DataGridViewColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Type of change".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.TabPage.set_ToolTipText(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="205">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'TabPage.ToolTipText.set(string)'. Retrieve the following string(s) from a resource table instead: "Collect every file event.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="423">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'TabPage.ToolTipText.set(string)'. Retrieve the following string(s) from a resource table instead: "Log create events in file system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="472">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'TabPage.ToolTipText.set(string)'. Retrieve the following string(s) from a resource table instead: "Log delete events in file system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="522">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'TabPage.ToolTipText.set(string)'. Retrieve the following string(s) from a resource table instead: "Log previous events in file system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="365">Method 'MainDialog.InitializeComponent()' passes a literal string as parameter 'value' of a call to 'TabPage.ToolTipText.set(string)'. Retrieve the following string(s) from a resource table instead: "Log rename events in file system.".</Issue>
+            </Message>
+            <Message Id="informations" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2016-04-23 15:52:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="353">Correct the spelling of the unrecognized token 'informations' in the literal '"File/Folder informations"'.</Issue>
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger" File="SystemFileLogger.Designer.cs" Line="213">Correct the spelling of the unrecognized token 'informations' in the literal '"More file informations"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717">
+   <Name>Only FlagsAttribute enums should have plural names</Name>
+   <Description>Plural names indicate that the values of the enumeration can be combined. For example, an enumeration named 'Day' indicates a single day, and an enumeration named 'Days' indicates multiple days. Enumeration values should be combined using the bit-wise OR operator only if the Flags attribute is present on the enumeration.</Description>
+   <Resolution Name="Default">If the name {0} is plural, change it to its singular form.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264487.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182191.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Local">{0}, a variable declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

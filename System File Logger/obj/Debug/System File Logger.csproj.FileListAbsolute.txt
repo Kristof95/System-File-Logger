@@ -1,0 +1,11 @@
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.exe.config
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.exe
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.pdb
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\obj\Debug\System_File_Logger.Properties.Resources.resources
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\obj\Debug\System File Logger.csproj.GenerateResource.Cache
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\obj\Debug\System File Logger.exe
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\obj\Debug\System File Logger.pdb
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.exe.CodeAnalysisLog.xml
+c:\users\kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\bin\Debug\System File Logger.exe.lastcodeanalysissucceeded
+C:\Users\Kristof\documents\visual studio 2015\Projects\System File Logger\System File Logger\obj\Debug\SysFileLogger.MainDialog.resources
+C:\Users\Kristof\Documents\Visual Studio 2015\Projects\System File Logger\System File Logger\obj\Debug\System File Logger.csprojResolveAssemblyReference.cache
